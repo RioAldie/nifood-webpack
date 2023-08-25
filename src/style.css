@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans:wght@100&family=Oswald&display=swap');
+
+nav {
+  background: #fff;
+  z-index: 10000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a.link-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.main {
+  margin-top: 30px;
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.main .hero {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.hero-box {
+  min-width: 400px;
+  max-width: 600px;
+}
+.hero-box:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-box:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-box .title {
+  font-size: 52px;
+  font-weight: 600;
+  font-family: 'Goldman', sans-serif;
+}
+.hero-box .subtitle {
+  max-width: 450px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.hero-box .button-box {
+  max-width: 450px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 50px;
+}
+#content {
+  margin-top: 50px;
+  width: 80%;
+  height: max-content;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.bab-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Goldman', sans-serif;
+  text-decoration: underline;
+}
+.detail-food {
+  max-width: 1000px;
+  min-width: 400px;
+  min-height: 400px;
+  max-height: max-content;
+  border: saddlebrown solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.detail-food .info-food {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.info-food .food-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Goldman', sans-serif;
+}
+.info-food .category {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Goldman', sans-serif;
+}
+.info-food .price-tag {
+  font-size: 32px;
+  color: #fff;
+}
+.box-button-food {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
