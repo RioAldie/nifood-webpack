@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans:wght@100&family=Oswald&display=swap');
 
+$danger: #b70404;
+$blck: #000;
+
+@import 'bootstrap/scss/bootstrap';
+
 nav {
   background: #fff;
   z-index: 10000;
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
-a.link-item {
-  font-size: 18px;
-  font-weight: 500;
-  color: red;
-  font-family: sans-serif;
-  text-decoration: none;
-}
+
 .main {
   margin-top: 30px;
   width: 100%;
@@ -87,7 +86,6 @@ a.link-item {
   min-width: 400px;
   min-height: 400px;
   max-height: max-content;
-  border: saddlebrown solid 1px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
