@@ -13,6 +13,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/food.html',
+      filename: 'food.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/menu.html',
+      filename: 'menu.html',
+    }),
     new MiniCssExtractPlugin(),
   ],
   devtool: false,

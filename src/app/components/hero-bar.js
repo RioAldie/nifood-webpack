@@ -11,12 +11,16 @@ class HeroBar extends HTMLElement {
         can order and make reservation from anywhere.
       </p>
       <div class="button-box">
-        <button class="btn btn-danger btn-lg">
-          Book a Table
-        </button>
-        <button class="btn btn-outline-danger btn-lg">
-          Our Menu
-        </button>
+        <a href="#form-booking" class="text-light">
+          <button class="btn btn-danger text-light btn-lg">
+            Book a Table
+          </button>
+        </a>
+        <a href="menu.html">
+          <button class="btn btn-outline-danger btn-lg">
+            Our Menu
+          </button>
+        </a>
       </div>
       </div>
    `;

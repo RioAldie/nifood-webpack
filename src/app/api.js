@@ -1,11 +1,14 @@
+import axios from 'axios';
+
 const getDataFromAPI = async () => {
   try {
-    const response = await fetch(
-      'https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese'
-    );
-    const foods = await response.json();
+    const response = await axios
+      .get(
+        'https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese'
+      )
+      .then((res) => res.data);
 
-    return foods;
+    return response;
   } catch (error) {
     console.log('error =>', error);
   }
@@ -13,12 +16,13 @@ const getDataFromAPI = async () => {
 
 const getDetailByID = async (id) => {
   try {
-    const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
-    );
-    const food = await response.json();
-    console.log(food);
-    return food;
+    const response = await axios
+      .get(
+        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
+      )
+      .then((res) => res.data);
+
+    return response;
   } catch (error) {
     console.log('error =>', error);
   }

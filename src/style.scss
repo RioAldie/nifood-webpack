@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans:wght@100&family=Oswald&display=swap');
 
 $danger: #b70404;
-$blck: #000;
 
 @import 'bootstrap/scss/bootstrap';
 
@@ -33,7 +32,7 @@ a {
   justify-content: center;
 }
 .hero-box {
-  min-width: 400px;
+  min-width: 309px;
   max-width: 600px;
 }
 .hero-box:nth-child(1) {
@@ -47,17 +46,17 @@ a {
   justify-content: flex-end;
 }
 .hero-box .title {
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 600;
   font-family: 'Goldman', sans-serif;
 }
 .hero-box .subtitle {
-  max-width: 450px;
+  max-width: 400px;
   font-size: 18px;
   font-weight: 400;
 }
 .hero-box .button-box {
-  max-width: 450px;
+  max-width: 400px;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;

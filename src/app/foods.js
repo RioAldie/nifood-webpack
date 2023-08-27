@@ -6,6 +6,9 @@ const writeFoodsToHTML = async () => {
 };
 const writeData = (foods) => {
   const container = document.getElementById('container-content');
+  if (!container) {
+    return null;
+  }
   foods.map((food) => {
     container.innerHTML += `<a href="food.html?${food.idMeal}" class="text-decoration-none text-secondary">
                                 <div class="card" style="width: 18rem">

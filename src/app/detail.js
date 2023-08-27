@@ -2,7 +2,9 @@ import { getDetailByID } from './api.js';
 
 const writeCardDetailFood = (food) => {
   const detailElement = document.getElementById('detail-box');
-
+  if (!detailElement) {
+    return null;
+  }
   detailElement.innerHTML = `<div class="img-food">
     <img
       src="${food.strMealThumb}"
